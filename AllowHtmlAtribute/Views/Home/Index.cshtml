@@ -1,0 +1,16 @@
+﻿@model HomeViewModel
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+
+    // Raw ile , hmtl içerisine(DOM'a') html içerik kaydedebilirsiniz.
+    @Html.Raw(Model.HtmlData)
+
+    <br />
+
+    //@Html.TextAreaFor(s=>s.HtmlData)
+
+    <input type="submit" value="Gönder" />
+
+
+}
